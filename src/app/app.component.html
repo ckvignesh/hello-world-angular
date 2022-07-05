@@ -1,15 +1,19 @@
-<link type="text/css" rel="stylesheet" href="./app.component.css" />
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <div class="navbar-nav">
+    <a class="nav-item nav-link" routerLink="/">Home</a>
+    <a class="nav-item nav-link" routerLink="/login">Login</a>
+    <a class="nav-item nav-link" routerLink="/register">Register</a>
+  </div>
+</nav>
 
-<!-- Toolbar -->
-<div class="toolbar" role="banner">
-  <span>Welcome</span>
-  <div class="spacer"></div>
+<!-- main content container -->
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
 </div>
-
-<div class="content" role="main">
-  <button (click)="goToPage('test')">Test Page</button>
-  <br /><br />
-  <button (click)="goToPage('demo')">Demo Page</button>
-</div>
-
-<router-outlet></router-outlet>
