@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "route-test-project": {
+    "hello-world-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/route-test-project",
+            "outputPath": "dist/hello-world-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "route-test-project:build:production"
+              "browserTarget": "hello-world-angular:build:production"
             },
             "development": {
-              "browserTarget": "route-test-project:build:development"
+              "browserTarget": "hello-world-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "route-test-project:build"
+            "browserTarget": "hello-world-angular:build"
           }
         },
         "test": {
